@@ -72,7 +72,7 @@ button{color:inherit}
 .master-brand img{display:block;width:100%;height:auto;border:1px solid var(--line-strong);border-radius:var(--radius);box-shadow:var(--shadow);background:#050b0e;object-fit:cover}
 @media(max-width:760px){.master-brand{padding-top:18px}.master-brand img{border-radius:10px}}
 
-.hero{display:grid;grid-template-columns:1.03fr .97fr;gap:64px;align-items:center;padding:92px 0 70px;min-height:760px}
+.hero{display:grid;grid-template-columns:1.03fr .97fr;gap:64px;align-items:start;padding:42px 0 70px;min-height:auto}
 .eyebrow,.kicker{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:var(--gold)}
 .eyebrow{display:flex;gap:9px;align-items:center}
 .status-dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 5px rgba(139,211,165,.08),0 0 18px rgba(139,211,165,.5)}
