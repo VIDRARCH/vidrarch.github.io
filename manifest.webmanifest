@@ -1,0 +1,12 @@
+{
+  "name": "VIDRARCH // Security Systems Engineering",
+  "short_name": "VIDRARCH",
+  "description": "Security Systems Engineering portfolio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071012",
+  "theme_color": "#071012",
+  "icons": [
+    {"src":"assets/vidrarch-favicon.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

@@ -1,0 +1,7 @@
+// Generic lab/example pattern only.
+// Confirm tables/fields exist in your tenant before production use.
+DeviceProcessEvents
+| where Timestamp > ago(24h)
+| where ProcessCommandLine has_any ("whoami", "nltest", "net group", "dsquery")
+| project Timestamp, DeviceName, AccountName, FileName, ProcessCommandLine
+| order by Timestamp desc

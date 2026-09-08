@@ -1,0 +1,7 @@
+# Generic lab/example pattern only. Adapt to verified field names in your own environment.
+index=<windows_security_index> earliest=-24h
+(EventCode=4720 OR EventID=4720)
+| eval created_user=coalesce(TargetUserName, user, Account_Name)
+| eval actor=coalesce(SubjectUserName, src_user, user)
+| table _time host actor created_user
+| sort - _time
